@@ -31,7 +31,7 @@ int main()
     timer.start();
     resultado=calcularRMS(datos, longitudTrama);
     timer.stop();
-    printf("\n****El valor Vrms es %f calculado en %d us ****\n\n",resultado,timer.read_us());
+    printf("\n****El valor Vrms es %f calculado en %lld us ****\n\n",resultado,timer.elapsed_time().count());
     
     estructuraMedidas medidas;
     medidas.energiaConsumida=0;
@@ -40,7 +40,7 @@ int main()
     timer.start();
     calcularDatos(datosV,datosI,longitudTrama,&medidas);
     timer.stop();
-    printf("**** Datos calculados en %d us ****\n",timer.read_us());
+    printf("**** Datos calculados en %lld us ****\n",timer.elapsed_time().count());
     printf("**** El valor Vrms es %f ****\n",medidas.vrms);
     printf("**** El valor Irms es %f ****\n",medidas.irms);
     printf("**** La potencia activa es %f ****\n",medidas.potenciaActiva);

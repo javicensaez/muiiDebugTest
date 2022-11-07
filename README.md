@@ -4,7 +4,7 @@ Utilizando esta plantilla se experimentará con la depuración en circuito de un
 
 El programa consta de dos apartados, en cada uno de ellos habrá que introducir código en una función
 
-# Ejercicio 1
+# Ejercicio 1  
 
 En este ejercicio hay que modificar el código que se encuentra en la función calcularRMS, la función tiene este deficición:
 
